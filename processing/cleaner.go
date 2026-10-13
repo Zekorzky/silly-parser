@@ -10,7 +10,6 @@ func Clean(input string) []string {
 	for _, ch := range input {
 		if IsOperator(string(ch)) || string(ch) == "(" || string(ch) == ")" {
 			if interval != "" {
-				println(interval)
 				result = append(result, interval)
 				interval = ""
 			}

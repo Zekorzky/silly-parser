@@ -12,10 +12,10 @@ func main() {
 
 	debug := flag.Bool("debug", false, "a bool")
 	flag.Parse()
-
 	processing.InitTokenizator()
 
 	for {
+
 		fmt.Printf("Enter your expression: ")
 		var input string
 		scanner := bufio.NewScanner(os.Stdin)
